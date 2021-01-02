@@ -95,8 +95,8 @@ app.get("/oauth/authorize",  (req, res) => {
 
 app.post("/",  (req, res) => {
     console.log("Not allowed");
-    res.send("Srever up!");
-    //res.send(req.body.challenge);
+    //res.send("Srever up!");
+    res.send(req.body.challenge);
 });
 
 
